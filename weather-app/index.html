@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Weather App Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="rain"></div>
+<div id="lightning" class="lightning"></div>
+
+<div class="container">
+
+<button id="themeBtn" onclick="toggleDark()">🌙</button>
+
+<h1>Weather App</h1>
+
+<div class="search-box">
+<input type="text" id="cityInput" placeholder="Search city...">
+<div id="suggestions"></div>
+</div>
+
+<div class="actions">
+<button onclick="getWeather()">Search</button>
+<button onclick="toggleUnit()" id="unitBtn">°C</button>
+</div>
+
+<div id="recentSearch"></div>
+<div id="favoriteList"></div>
+
+<div id="weatherBox"></div>
+<div id="forecastBox"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
